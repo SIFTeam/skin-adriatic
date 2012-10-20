@@ -1,21 +1,21 @@
 <skin>
 	<!--
-	################### Daconi MODE_adriatic_turquoise_SIF KOALA_All Models ####################
+	################### Daconi MODE_adriatic_turquoise_SIF JackaL_All Models ####################
 
 
-	QUESTA SKIN è protetta da copyright ed è utilizzabile solo per i firmware SIF TEAM e AMICI di redTeam.
+	QUESTA SKIN è protetta da copyright ed è utilizzabile solo per i firmware SIF TEAM !!!
 	È possibile modificare questo skin SOLO PER USO PERSONALE, MA NON E' POSSIBILE USARE IL
 	CODICE E LA GRAFICA DELLA STESSA PER FARNE UNA NUOVA O PER ADATTARE QUESTA SKIN SU
 	Immagini diverse.
 	
 	################### Daconi MODE_adriatic_turquoise_SIF KOALA_All Models ###################
 	
-	THIS SKIN is copyrighted and usable only for firmware SIF TEAM and friends redTeam.
+	THIS SKIN is copyrighted and usable only for firmware SIF TEAM !!!
 	You can change this skin for PERSONAL USE ONLY, BUT you may not USE the
 	CODE AND GRAPHICS OF THE SAME TO MAKE A NEW OR ADAPT THIS SKIN ON
 	Different images
 	
-	################### Daconi MODE_adriatic_turquoise_SIF KOALA_All Models ###################
+	################### Daconi MODE_adriatic_turquoise_SIF JackaL_All Models ###################
 	-->
 	
 	<output id="0">
@@ -77,7 +77,7 @@
  		<color name="ListboxSelectedBackground" color="#000000"/> 
 	 	<color name="ListboxSelectedForeground" color="#89e8ff"/> 
 		<color name="ListboxMarkedBackground" color="#000000"/>
-		<color name="ListboxMarkedForeground" color="#48d1cc"/>
+		<color name="ListboxMarkedForeground" color="#67d9d5"/>
 		<color name="ListboxMarkedAndSelectedBackground" color="#000000"/>
 		<color name="ListboxMarkedAndSelectedForeground" color="#008080"/>
 		<color name="WindowTitleForeground" color="#ffffff"/>
@@ -105,7 +105,7 @@
 		<color name="ListboxBackground" color="#000000"/>
 		<color name="ListboxForeground" color="#ffffff"/>
 		<color name="ListboxSelectedBackground" color="#000000"/>
-		<color name="ListboxSelectedForeground" color="#4ccbde"/>
+		<color name="ListboxSelectedForeground" color="#54cedd"/>
 		<color name="ListboxMarkedBackground" color="#000000"/>
 		<color name="ListboxMarkedForeground" color="#ffffff"/>
 		<color name="ListboxMarkedAndSelectedBackground" color="#000000"/>
@@ -121,12 +121,16 @@
 		<widget name="text" position="12,30" size="536,46" font="Regular;38" transparent="1" noWrap="1" halign="right" />
 		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" transparent="1" />
     </screen>
-	
+	<!-- (004 Volume Digital -->
+        <screen name="Volume" position="1100,130" zPosition="1" size="120,120" title="Volume"  backgroundColor="transparent" flags="wfNoBorder">
+                <ePixmap pixmap="adriatic_turquoise/skin_default/icons/volumeoff.png" position="0,0" size="120,120" alphatest="blend" zPosition="2" transparent="1" />
+                <widget render="dmmVolumeText" source="global.CurrentTime" font="LCD;38" position="10,34" size="100,50" backgroundColor="#333333" halign="center" valign="center" foregroundColor="black" transparent="1" zPosition="4"/>
+        </screen>
 	<!-- (004) ####### Volume ####### -->
-	<screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
+	<!--screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
 		<ePixmap pixmap="adriatic_turquoise/volume.png" position="0,0" size="26,368" alphatest="blend" transparent="1" />
 		<widget name="Volume" pixmap="adriatic_turquoise/vol.png" position="3,10" zPosition="1" orientation="orBottomToTop" size="20,323" transparent="1" />
-	</screen>
+	</screen-->
 	
 	<!-- (005) ####### Mute ####### -->
 	<screen name="Mute" position="71,30" zPosition="10" size="72,71" title="Mute"  backgroundColor="background" flags="wfNoBorder">
@@ -298,11 +302,19 @@
 		<panel name="4keys" />
 		<panel name="pigtemplate" />
                 <ePixmap  position="0,0" zPosition="-1" size="1280,720" pixmap="adriatic_turquoise/menu/fr_main_channels.png"  />
-		<ePixmap position="772,106" zPosition="4" size="29,465" pixmap="adriatic_turquoise/icons/maxbar.png" alphatest="blend" transparent="1" />
-		<ePixmap position="772,571" zPosition="4" size="29,40" pixmap="adriatic_turquoise/icons/endbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="772,110" zPosition="4" size="29,468" pixmap="adriatic_turquoise/icons/maxbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="772,577" zPosition="4" size="29,40" pixmap="adriatic_turquoise/icons/endbar.png" alphatest="blend" transparent="1" />
                 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+
+
 		<widget name="timeline_text" position="55,66" size="800,30" foregroundColor="#4ccbde" backgroundColor="background" transparent="1" />
-		<widget name="list" position="57,106" size="741,477" scrollbarMode="showOnDemand" foreColorSelected="white" EntryBorderColor="#4ccbde" EntryBackgroundColor="#2f4964" EntryBackgroundColorSelected="#073a6c" transparent="1" />
+		<widget name="timeline_now"  position="215,103" zPosition="2" size="19,510" pixmap="adriatic_turquoise/timeline-now.png" alphatest="on" transparent="1" />
+			
+		<widget name="list" position="65,110" size="731,482" scrollbarMode="showOnDemand" transparent="1"
+							EntryBorderColor="#538eff" EntryBackgroundColor="#2f4964" ServiceBackgroundColorSelected="grey" ServiceForegroundColorSelected ="black"
+		                                        EntryForegroundColorNow="black" EntryBackgroundColorNow ="white" EntryBackgroundColorSelected="#073a6c"  EntryForegroundColorSelected="white" />
+
+
 		<ePixmap position="67,132" size="700,2" pixmap="adriatic_turquoise/div-h.png" alphatest="blend" transparent="1" />
 		<ePixmap position="67,616" size="700,2" pixmap="adriatic_turquoise/div-h.png" alphatest="blend" transparent="1" />
 		<widget name="timeline0" position="80,105" zPosition="1" size="1,484" pixmap="adriatic_turquoise/timeline.png" />
@@ -311,7 +323,6 @@
 		<widget name="timeline3" position="80,105" zPosition="1" size="1,484" pixmap="adriatic_turquoise/timeline.png" />
 		<widget name="timeline4" position="80,105" zPosition="1" size="1,484" pixmap="adriatic_turquoise/timeline.png" />
 		<widget name="timeline5" position="80,105" zPosition="1" size="1,484" pixmap="adriatic_turquoise/timeline.png" />
-		<widget name="timeline_now" position="82,105" zPosition="2" size="19,500" pixmap="adriatic_turquoise/timeline-now.png" alphatest="on" />
 		<!-- Widget Event -->
 		<widget source="Event" render="Label" position="800,66" zPosition="2" size="440,24" font="Regular;22" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1" >
 			<convert type="EventTime">StartTime</convert>
@@ -436,7 +447,7 @@
 		
 		<!-- decorative elements -->
 		<ePixmap position="0,0" zPosition="1" size="371,69" pixmap="adriatic_turquoise/menu/tx_language.png"  />
-		<ePixmap position="870,400" zPosition="1" size="300,220" pixmap="adriatic_turquoise/menu/ico_flags.png" alphatest="blend" transparent="1" />
+		<ePixmap position="860,414" zPosition="1" size="300,220" pixmap="adriatic_turquoise/menu/ico_flags.png" alphatest="blend" transparent="1" />
 		<ePixmap position="762,135" zPosition="4" size="27,400" pixmap="adriatic_turquoise/icons/barra400.png" alphatest="blend" transparent="1" />
 
                 <!-- digital clock -->
@@ -1275,7 +1286,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="0,0" zPosition="-1" size="399,69" pixmap="adriatic_turquoise/menu/tx_plugins.png"  />
 		<ePixmap position="56,625" zPosition="1" size="350,38" pixmap="adriatic_turquoise/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
 		<ePixmap position="774,137" zPosition="2" size="27,400" pixmap="adriatic_turquoise/icons/barra400.png" alphatest="blend" transparent="1" />
-		<ePixmap position="870,414" zPosition="2" size="370,204"  pixmap="adriatic_turquoise/menu/ico_plugins.png" alphatest="blend" transparent="1" />
+		<ePixmap position="860,414" zPosition="2" size="370,204"  pixmap="adriatic_turquoise/menu/ico_plugins.png" alphatest="blend" transparent="1" />
 		<widget name="list" position="73,137" size="725,400" scrollbarMode="showOnDemand" selectionPixmap="adriatic_turquoise/icons/ls680x50.png" transparent="1"/>
 		<!-- Widget Pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
@@ -1298,7 +1309,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="adriatic_turquoise/menu/fr_main_channels.png"  />
 		<ePixmap position="0,0" zPosition="-1" size="421,69" pixmap="adriatic_turquoise/menu/tx_information.png"  />
 		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="adriatic_turquoise/menu/colorbar.png" alphatest="blend" transparent="1" />
-		<ePixmap position="940,414" zPosition="2" size="370,204"  pixmap="adriatic_turquoise/menu/ico_sat.png" alphatest="blend" transparent="1" />
+		<ePixmap position="934,416" zPosition="2" size="370,204"  pixmap="adriatic_turquoise/menu/ico_sat.png" alphatest="blend" transparent="1" />
 		<widget name="infolist" position="73,137" size="715,400" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="adriatic_turquoise/icons/ls680x50.png" transparent="1" />
 		<!-- Widget Pig -->
 			 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
@@ -2061,7 +2072,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="picshow" position="0,0" size="1280,720" title="PicturePlayer" flags="wfNoBorder" >
 		<ePixmap pixmap="adriatic_turquoise/menu/fr_main_channels.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />
 		<ePixmap position="771,131" zPosition="3" size="27,420" pixmap="adriatic_turquoise/icons/barra420.png" alphatest="blend" transparent="1" />
-		<ePixmap position="928,414" zPosition="1" size="256,256" pixmap="adriatic_turquoise/menu/ico_picplayer.png" alphatest="blend" transparent="1" />
+		<ePixmap position="933,416" zPosition="1" size="256,256" pixmap="adriatic_turquoise/menu/ico_picplayer.png" alphatest="blend" transparent="1" />
 		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="adriatic_turquoise/menu/colorbar.png" alphatest="blend" transparent="1" />
 		<ePixmap position="0,0" zPosition="-1" size="555,69" pixmap="adriatic_turquoise/menu/tx_picplayer.png"  />
 		<widget name="filelist" position="76,133" size="720,415" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="adriatic_turquoise/icons/ls615x26.png" backgroundColor="black" transparent="1" />
@@ -2401,7 +2412,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="adriatic_turquoise/menu/fr_main.png"/>
 		<ePixmap position="0,0" zPosition="-1" size="455,48" pixmap="adriatic_turquoise/menu/tx_positioner.png"  />
 		<ePixmap position="57,625" zPosition="1" size="350,38" pixmap="adriatic_turquoise/menu/colorbar.png" alphatest="blend" transparent="1" />
-		<ePixmap position="940,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_sat.png" alphatest="blend" transparent="1" />
+		<ePixmap position="934,416" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_sat.png" alphatest="blend" transparent="1" />
 		<ePixmap position="839,112" zPosition="1" size="382,218" pixmap="adriatic_turquoise/prev.png" />
 		<widget name="list" position="89,136" 	size="660,155" backgroundColor="black" transparent="1"/>
 		<widget name="snr_db" position="160,310" 	size="200,24" 	halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1"/>
@@ -2563,7 +2574,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="adriatic_turquoise/menu/fr_main_channels.png"/>
 		<ePixmap position="57,625" zPosition="1" size="350,38" pixmap="adriatic_turquoise/menu/colorbar.png" alphatest="blend" transparent="1" />
 		<ePixmap position="0,0" zPosition="-1" size="555,69" pixmap="adriatic_turquoise/menu/tx_setvideo.png"  />
-		<ePixmap position="933,414" zPosition="1" size="200,200" pixmap="adriatic_turquoise/menu/ico_setvideo.png" alphatest="blend" transparent="1" />
+		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="adriatic_turquoise/menu/ico_setvideo.png" alphatest="blend" transparent="1" />
                 <ePixmap position="769,137" zPosition="2" size="27,420" pixmap="adriatic_turquoise/icons/barra420.png" alphatest="blend" transparent="1" />
 		<widget name="config" position="69,137" size="725,418" scrollbarMode="showAlways" transparent="1" />
 		<!-- Widget Pig -->
@@ -3110,21 +3121,43 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
       <convert type="ServiceName">Reference</convert>
     </widget>
     <!-- Sezione DVB - DVB Section -->
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1099,540" zPosition="3" size="81,24" font="Regular;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1064,538" zPosition="3" size="81,24" font="Regular;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1099,540" zPosition="3" size="81,24" font="Regular;20" halign="left" foregroundColor="#77d8e6" backgroundColor="#333333" transparent="0">"session.CurrentService"
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1064,538" zPosition="3" size="81,24" font="Regular;20" halign="left" foregroundColor="#77d8e6" backgroundColor="#333333" transparent="0">"session.CurrentService"
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1099,540" zPosition="3" size="81,24" font="Regular;20" halign="left" foregroundColor="#30d6e6" backgroundColor="#333333" transparent="1">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1064,538" zPosition="3" size="81,24" font="Regular;20" halign="left" foregroundColor="#30d6e6" backgroundColor="#333333" transparent="1">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+    <!-- Sezione Numero di TUNER - Numero di TUNER A B C D -->
+    <eLabel text="TUNER" zPosition="4" position="1134,540" size="60,20" halign="left" font="LCD;20" foregroundColor="foreground" transparent="1" backgroundColor="#333333" />
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1190,540" zPosition="3" size="15,20" font="LCD;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+  			<convert type="FrontendInfo">NUMBER</convert>
+  			<convert type="ValueRange">0,0</convert>
+  			<convert type="ConditionalShowHide" />
+  		</widget>
+  		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1190,540" zPosition="3" size="15,20" font="LCD;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+  			<convert type="FrontendInfo">NUMBER</convert>
+  			<convert type="ValueRange">1,1</convert>
+  			<convert type="ConditionalShowHide" />
+  		</widget>
+  		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1190,540" zPosition="3" size="15,20" font="LCD;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+  			<convert type="FrontendInfo">NUMBER</convert>
+  			<convert type="ValueRange">2,2</convert>
+  			<convert type="ConditionalShowHide" />
+  		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1190,540" zPosition="3" size="15,20" font="LCD;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">3,3</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
     <widget source="session.CurrentService" render="ServiceNumber" position="279,531" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#4ccbde" backgroundColor="background" zPosition="2" />
     <!-- Sezione SNR - SNR Section -->
@@ -3429,8 +3462,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="Pixmap" pixmap="adriatic_turquoise/icons/icon_sub.png" position="726,532" zPosition="4" size="49,28" alphatest="on">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
-		</widget> 
-	
+		</widget>
+
+		
 	<eLabel 
 		text="sid" 
 		position="710,656" 
@@ -3565,7 +3599,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="menu_setup" position="0,0" size="1280,720" title="Main menu"  flags="wfNoBorder"  backgroundColor="transparent">
 		<panel name="ScreenMenuTemplate" />
 		<ePixmap position="0,0" zPosition="-1" size="455,69" pixmap="adriatic_turquoise/menu/tx_config.png" />
-		<ePixmap position="880,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_setup.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="860,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_setup.png" alphatest="blend" transparent="1"/>
                 <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
@@ -3583,7 +3617,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="menu_scan" position="0,0" size="1280,720" title="Main menu Channel Scan" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="ScreenMenuTemplate" />
 		<ePixmap position="0,0" zPosition="-1" size="455,69" pixmap="adriatic_turquoise/menu/tx_config.png" />
-		<ePixmap position="940,425" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_sat.png" alphatest="blend" transparent="1" />
+		<ePixmap position="934,416" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_sat.png" alphatest="blend" transparent="1" />
                 <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
@@ -3601,7 +3635,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="menu_system" position="0,0" size="1280,720" title="Main menu System"  backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="ScreenMenuTemplate" />
 		<ePixmap position="0,0" zPosition="-1" size="455,69" pixmap="adriatic_turquoise/menu/tx_config.png" />
-		<ePixmap position="880,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_setup.png" alphatest="blend" transparent="1" />
+		<ePixmap position="860,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_setup.png" alphatest="blend" transparent="1" />
                 <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
@@ -3637,7 +3671,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="menu_information" position="0,0" size="1280,720" title="Menu Information" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="ScreenMenuTemplate" />
 		<ePixmap position="0,0" zPosition="-1" size="421,69" pixmap="adriatic_turquoise/menu/tx_information.png" />
-		<ePixmap position="936,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_information.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+		<ePixmap position="933,416" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_information.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
                 <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
@@ -3655,7 +3689,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="menu_shutdown" position="0,0" size="1280,720" title="Main menu"  backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="ScreenMenuTemplate" />
 		<ePixmap position="0,0" zPosition="-1" size="807,70" pixmap="adriatic_turquoise/menu/tx_shutdown.png" />
-		<ePixmap position="960,445" zPosition="1" size="160,160" pixmap="adriatic_turquoise/menu/ico_shutdown.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+		<ePixmap position="956,440" zPosition="1" size="160,160" pixmap="adriatic_turquoise/menu/ico_shutdown.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
                 <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
@@ -3691,19 +3725,19 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
         <!-- ####### TEMPLATE FOR ICONS OF "MENU SELECTED ITEM" (16-03) ####### -->
 	<screen name="MenuIconsTemplate">
-		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_shutdown1.png" position="850,414" size="370,204" alphatest="blend" transparent="1" >
+		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_shutdown1.png" position="860,414" size="370,204" alphatest="blend" transparent="1" >
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_setup.png" position="880,414" size="370,204" alphatest="blend" transparent="1" >
+		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_setup.png" position="860,414" size="370,204" alphatest="blend" transparent="1" >
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_plugins.png" position="870,414" size="370,204" alphatest="blend" transparent="1" >
+		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_plugins.png" position="860,414" size="370,204" alphatest="blend" transparent="1" >
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_information.png" position="936,414" size="370,204" alphatest="blend" transparent="1" >
+		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_information.png" position="933,416" size="370,204" alphatest="blend" transparent="1" >
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -3715,11 +3749,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_mediaplayer.png" position="865,414" size="370,204" alphatest="blend" transparent="1" >
+		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_mediaplayer.png" position="860,414" size="370,204" alphatest="blend" transparent="1" >
 			<convert type="MenuEntryCompare">media_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_mediacenter.png" position="936,414" size="370,204" alphatest="blend" transparent="1" >
+		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_mediacenter.png" position="933,416" size="370,204" alphatest="blend" transparent="1" >
 			<convert type="MenuEntryCompare">dmc_mainmenu</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -3731,7 +3765,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="MenuEntryCompare">emu</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_card_server.png" position="936,414" size="370,204" alphatest="blend" transparent="1" >
+		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise/menu/ico_card_server.png" position="933,416" size="370,204" alphatest="blend" transparent="1" >
 			<convert type="MenuEntryCompare">cs</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -3957,7 +3991,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
-        <ePixmap position="936,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_card_server.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+        <ePixmap position="933,416" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_card_server.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
         <ePixmap position="0,0" zPosition="1" size="670,83" pixmap="adriatic_turquoise/menu/tx_sifpanel.png" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/red.png" position="78,615" size="140,40" alphatest="on" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/green.png" position="264,615" size="140,40" alphatest="on" />
@@ -4118,7 +4152,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
-        <ePixmap position="930,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+        <ePixmap position="932,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
 	<ePixmap pixmap="adriatic_turquoise/buttons/red.png" position="78,615" size="140,40" alphatest="on" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/green.png" position="264,615" size="140,40" alphatest="on" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/yellow.png" position="452,615" size="140,40" alphatest="on" />
@@ -4172,7 +4206,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
-        <ePixmap position="928,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_usb_remove.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+        <ePixmap position="932,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_usb_remove.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
         <ePixmap position="0,0" zPosition="1" size="670,83" pixmap="adriatic_turquoise/menu/tx_sifpanel.png" alphatest="blend" transparent="1" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/red.png" position="78,615" size="140,40" alphatest="on" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/blue.png" position="264,615" size="140,40" alphatest="on" />
@@ -4197,7 +4231,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="un89e4" backgroundColor="background">
         <convert type="ServiceName">Name</convert>
         </widget>
-        <ePixmap position="935,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+        <ePixmap position="932,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
 	<ePixmap pixmap="adriatic_turquoise/buttons/red.png" position="78,615" size="140,40" alphatest="on" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/green.png" position="264,615" size="140,40" alphatest="on" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/yellow.png" position="452,615" size="140,40" alphatest="on" />
@@ -4230,7 +4264,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="un89e4" backgroundColor="background">
         <convert type="ServiceName">Name</convert>
         </widget>
-        <ePixmap position="935,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+        <ePixmap position="932,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
 	<ePixmap pixmap="adriatic_turquoise/buttons/red.png" position="78,615" size="140,40" alphatest="on" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/green.png" position="264,615" size="140,40" alphatest="on" />
 	<ePixmap pixmap="adriatic_turquoise/buttons/yellow.png" position="452,615" size="140,40" alphatest="on" />
@@ -4585,7 +4619,7 @@ self[&quot;menu&quot;].downstream_elements.downstream_elements.instance.resize(e
 	<screen name="SMFeeds" position="0,0" size="1280,720" flags="wfNoBorder">
         <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise/menu/fr_main_channels.png" />
         <ePixmap position="769,133" zPosition="2" size="27,400" pixmap="adriatic_turquoise/icons/barra400.png" alphatest="blend" transparent="1" />
-        <ePixmap position="928,414" zPosition="1" size="400,204" pixmap="adriatic_turquoise/menu/ico_download.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+        <ePixmap position="932,414" zPosition="1" size="400,204" pixmap="adriatic_turquoise/menu/ico_download.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
         <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
         <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
@@ -4935,7 +4969,7 @@ self[&quot;menu&quot;].downstream_elements.downstream_elements.instance.resize(e
 		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-        <ePixmap position="928,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_cloud.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+        <ePixmap position="860,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise/menu/ico_cloud.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
         <ePixmap position="0,0" zPosition="1" size="670,83" pixmap="adriatic_turquoise/menu/tx_sifpanel.png" alphatest="blend" transparent="1" />
 	<screen name="AccountStatus" position="0,0" size="1280,720" flags="wfNoBorder">
         <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise/menu/fr_main_channels.png" />
@@ -5014,7 +5048,7 @@ self[&quot;menu&quot;].downstream_elements.downstream_elements.instance.resize(e
 	<!-- settings -->
 	<screen name="STCategories" position="0,0" size="1280,720" flags="wfNoBorder">
         <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise/menu/fr_main_channels.png" />
-        <ePixmap position="950,414" zPosition="1" size="200,300" pixmap="adriatic_turquoise/menu/ico_dtt.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+        <ePixmap position="934,416" zPosition="1" size="200,300" pixmap="adriatic_turquoise/menu/ico_dtt.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
         <ePixmap position="769,133" zPosition="2" size="27,400" pixmap="adriatic_turquoise/icons/barra400.png" alphatest="blend" transparent="1" />
         <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
         <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
@@ -5137,7 +5171,7 @@ self[&quot;menu&quot;].downstream_elements.downstream_elements.instance.resize(e
 	</screen>
 	<screen name="STKeepBouquets" position="0,0" size="1280,720" flags="wfNoBorder">
         <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise/menu/fr_main_channels.png" />
-        <ePixmap position="950,414" zPosition="1" size="200,300" pixmap="adriatic_turquoise/menu/ico_dtt.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
+        <ePixmap position="934,416" zPosition="1" size="200,300" pixmap="adriatic_turquoise/menu/ico_dtt.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
         <ePixmap position="769,133" zPosition="2" size="27,400" pixmap="adriatic_turquoise/icons/barra400.png" alphatest="blend" transparent="1" />
         <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
                 <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
