@@ -53,6 +53,7 @@
 	<!-- Fonts -->
 	<fonts>
 		<font filename="Verdana_R.ttf" name="Regular" scale="95" />
+                <font filename="Daconi-digital-Bold.ttf" name="LCD2" scale="100" />
 		<font filename="Daconi-digital-watch.ttf" name="LCD" scale="100" />
 		<font filename="tuxtxt.ttf" name="Console" scale="100" />
 		<font filename="ae_AlMateen.ttf" name="Replacement" scale="90" replacement="1"/>
@@ -124,7 +125,7 @@
 	<!-- (004 Volume Digital -->
         <screen name="Volume" position="1100,130" zPosition="1" size="120,120" title="Volume"  backgroundColor="transparent" flags="wfNoBorder">
                 <ePixmap pixmap="adriatic_turquoise/skin_default/icons/volumeoff.png" position="0,0" size="120,120" alphatest="blend" zPosition="2" transparent="1" />
-                <widget render="dmmVolumeText" source="global.CurrentTime" font="LCD;38" position="10,34" size="100,50" backgroundColor="#333333" halign="center" valign="center" foregroundColor="black" transparent="1" zPosition="4"/>
+                <widget render="dmmVolumeText" source="global.CurrentTime" font="LCD2;46" position="10,35" size="100,50" backgroundColor="#333333" halign="center" valign="center" foregroundColor="black" transparent="1" zPosition="4"/>
         </screen>
 	<!-- (004) ####### Volume ####### -->
 	<!--screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
@@ -3138,22 +3139,22 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </widget>
     <!-- Sezione Numero di TUNER - Numero di TUNER A B C D -->
     <eLabel text="TUNER" zPosition="4" position="1134,540" size="60,20" halign="left" font="LCD;20" foregroundColor="foreground" transparent="1" backgroundColor="#333333" />
-		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1190,540" zPosition="3" size="15,20" font="LCD;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1190,540" zPosition="3" size="15,20" font="LCD2;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
   			<convert type="FrontendInfo">NUMBER</convert>
   			<convert type="ValueRange">0,0</convert>
   			<convert type="ConditionalShowHide" />
   		</widget>
-  		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1190,540" zPosition="3" size="15,20" font="LCD;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+  		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1190,540" zPosition="3" size="15,20" font="LCD2;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
   			<convert type="FrontendInfo">NUMBER</convert>
   			<convert type="ValueRange">1,1</convert>
   			<convert type="ConditionalShowHide" />
   		</widget>
-  		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1190,540" zPosition="3" size="15,20" font="LCD;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+  		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1190,540" zPosition="3" size="15,20" font="LCD2;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
   			<convert type="FrontendInfo">NUMBER</convert>
   			<convert type="ValueRange">2,2</convert>
   			<convert type="ConditionalShowHide" />
   		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1190,540" zPosition="3" size="15,20" font="LCD;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1190,540" zPosition="3" size="15,20" font="LCD2;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide" />
