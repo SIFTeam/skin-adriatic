@@ -125,7 +125,7 @@
 	<!-- (004 Volume Digital -->
         <screen name="Volume" position="1100,130" zPosition="1" size="120,120" title="Volume"  backgroundColor="transparent" flags="wfNoBorder">
                 <ePixmap pixmap="adriatic_turquoise/skin_default/icons/volumeoff.png" position="0,0" size="120,120" alphatest="blend" zPosition="2" transparent="1" />
-                <widget render="dmmVolumeText" source="global.CurrentTime" font="LCD2;46" position="10,35" size="100,50" backgroundColor="#333333" halign="center" valign="center" foregroundColor="black" transparent="1" zPosition="4"/>
+                <widget render="VolumeText" source="global.CurrentTime" font="LCD2;46" position="10,35" size="100,50" backgroundColor="#333333" halign="center" valign="center" foregroundColor="black" transparent="1" zPosition="4"/>
         </screen>
 	<!-- (004) ####### Volume ####### -->
 	<!--screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
