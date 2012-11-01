@@ -3085,7 +3085,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <!-- Nome Canale - Service Name -->
-    <widget source="session.CurrentService" render="Label" position="352,497" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
+    <widget source="session.CurrentService" render="Label" position="352,498" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
       <convert type="ServiceName">Name</convert>
     </widget>
     <!-- Evento Corrente - Event Now -->
