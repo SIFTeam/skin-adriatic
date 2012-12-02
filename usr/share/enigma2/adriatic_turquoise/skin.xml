@@ -3984,16 +3984,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
                 <widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
-		<panel name="GenericLayoutTemplate" />
-		<panel name="ScrollBarTemplate450" />
-		<panel name="PigTemplate" />
-		<panel name="3Buttons" />
                 <ePixmap position="772,110" zPosition="4" size="29,468" pixmap="adriatic_turquoise/icons/maxbar.png" alphatest="blend" transparent="1" />
 		<ePixmap position="772,577" zPosition="4" size="29,40" pixmap="adriatic_turquoise/icons/endbar.png" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="adriatic_turquoise/menu/ico_receiv.png" position="840,370" size="380,256" zPosition="3" alphatest="on" />
                 <ePixmap position="56,625" zPosition="1" size="350,38" pixmap="adriatic_turquoise/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
                 <eLabel text="Exit" position="112,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1"/>
-		<widget source="key_red" render="Label" position="11,615" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" foregroundColor="white" transparent="1" />
 		<widget source="list" render="Listbox" position="66,135" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="adriatic_turquoise/icons/ls_720x24.png" backgroundColor="black" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
