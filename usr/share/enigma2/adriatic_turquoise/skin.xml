@@ -4026,6 +4026,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PigTemplate" />
 		<panel name="3Buttons" />
 		<ePixmap pixmap="adriatic_turquoise/menu/ico_receiv.png" position="840,370" size="380,256" zPosition="3" alphatest="on" />
+                <ePixmap position="56,625" zPosition="1" size="350,38" pixmap="adriatic_turquoise/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
                 <eLabel text="Exit" position="112,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1"/>
                 <eLabel text="Save" position="302,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1" />
 		<widget source="list" render="Listbox" position="60,145" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="adriatic_turquoise/icons/ls_720x24.png" backgroundColor="#333333" transparent="1" >
