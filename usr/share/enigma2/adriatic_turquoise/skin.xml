@@ -619,15 +619,15 @@
 		<ePixmap pixmap="adriatic_turquoise/menu/backbox.png" zPosition="-1" position="0,0" size="650,550" alphatest="on" />
 		<ePixmap position="0,330" zPosition="-1" size="650,220" pixmap="adriatic_turquoise/about.png" alphatest="blend" transparent="1" />
 		<widget source="EnigmaVersion" render="Label" position="30,10"	size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-		<widget source="ImageVersion" render="Label" position="30,40" 	size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-		<widget source="FPVersion" render="Label" position="30,80" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-		<widget source="TunerHeader" render="Label" position="30,110" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-		<widget source="Tuner0" render="Label"	position="30,140" size="680,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-		<widget source="Tuner1" render="Label" 	position="30,170" size="680,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-		<widget source="Tuner2" render="Label" 	position="30,200" size="680,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-		<widget source="Tuner3" render="Label" 	position="30,230" size="680,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-		<widget source="HDDHeader" render="Label" position="30,240" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-		<widget source="hddA" render="Label" position="30,270" 	size="650,55" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+		<widget source="ImageVersion" render="Label" position="30,38" 	size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+		<widget source="FPVersion" render="Label" position="30,75" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+		<widget source="TunerHeader" render="Label" position="30,102" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+		<widget source="Tuner0" render="Label"	position="30,130" size="680,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+		<widget source="Tuner1" render="Label" 	position="30,158" size="680,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+		<widget source="Tuner2" render="Label" 	position="30,187" size="680,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+		<widget source="Tuner3" render="Label" 	position="30,215" size="680,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+		<widget source="HDDHeader" render="Label" position="30,245" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+		<widget source="hddA" render="Label" position="30,272" 	size="650,55" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
 	</screen>
 	<!-- (015) ####### NETWORK SETUP CONFIGURATION ####### (12-02) -->
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" title="Network Configuration..." flags="wfNoBorder" >
@@ -3927,6 +3927,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="65,150" size="725,250" scrollbarMode="showOnDemand" zPosition="1" selectionPixmap="adriatic_turquoise/icons/ls_720x24.png" backgroundColor="#333333" transparent="1" />
 		<widget name="information" position="840,350" size="370,300" halign="center" valign="center" font="Regular;22" backgroundColor="#333333" transparent="1" />
                 <eLabel text="Exit" position="112,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1"/>
+                <eLabel text="Save" position="302,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1" />
 		<widget source="key_red" render="Label" position="11,615" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" foregroundColor="white" transparent="1" />
 	</screen>
 
@@ -3966,6 +3967,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>
 		</widget>	
 		<eLabel text="Exit" position="112,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1"/>
+                <eLabel text="Save" position="302,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1" />
 	</screen>
 
 	<!-- Providers -->
@@ -3989,6 +3991,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="adriatic_turquoise/menu/ico_receiv.png" position="840,370" size="380,256" zPosition="3" alphatest="on" />
                 <ePixmap position="56,625" zPosition="1" size="350,38" pixmap="adriatic_turquoise/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
                 <eLabel text="Exit" position="112,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1"/>
+                <eLabel text="Save" position="302,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1" />
 		<widget source="list" render="Listbox" position="66,135" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="adriatic_turquoise/icons/ls_720x24.png" backgroundColor="black" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -4023,6 +4026,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PigTemplate" />
 		<panel name="3Buttons" />
 		<ePixmap pixmap="adriatic_turquoise/menu/ico_receiv.png" position="840,370" size="380,256" zPosition="3" alphatest="on" />
+                <eLabel text="Exit" position="112,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1"/>
+                <eLabel text="Save" position="302,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1" />
 		<widget source="list" render="Listbox" position="60,145" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="adriatic_turquoise/icons/ls_720x24.png" backgroundColor="#333333" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
